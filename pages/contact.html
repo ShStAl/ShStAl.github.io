@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link href="../css/style.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -25,22 +25,22 @@
     <div class="contact-form">
       <h2>Contact me 🖖🏻</h2>
       <form action="https://formspree.io/f/mrgwgvog" method="POST">
-        <input type="text" name="fname" placeholder="First name" class="field" required>
-        <input type="text" name="lname" placeholder="Last name" class="field">
-        <input type="email" name="email" placeholder="Email" class="field" required>
-        <input type="tel" name="phone" placeholder="Phone number" class="field">
-        <textarea name="message" placeholder="Put your text here..." class="field"></textarea>
+        <input type="text" name="Name" placeholder="First name (required)" class="field" required>
+        <input type="text" name="Surname" placeholder="Last name" class="field">
+        <input type="email" name="Email" placeholder="Email (required)" class="field" required>
+        <input type="tel" name="Phone" placeholder="Phone number" class="field">
+        <textarea name="Comment" placeholder="Any comments... (required)" class="field" required></textarea>
         <div class="field">
-          <label for="contact-type">What is the best way to contact you?</label>
-          <select id="contact-type" name="contact-type">
-            <option selected>Select one...</option>
+          <label for="contact-type">What is the best way to contact you? (required)</label>
+          <select id="contact-type" name="Contact-type" required>
+            <option value="">Select one...</option>
             <option value="Email">Email</option>
             <option value="Phone">Phone call</option>
             <option value="Telegram">Telegram</option>
             <option value="Whatsapp">Whatsapp</option>
           </select>
         </div>
-        <button class="contact-btn" type="submit">Send</button>
+        <button class="contact-btn" type="submit" disabled="">Send</button>
       </form>
     </div>
   </div>
@@ -56,8 +56,8 @@
       <div class="footer-text">&#169; Israel Tech Challenge</div>
     </div>
   </footer>
-  <script src="../js/main.js"></script>
   <script src="../js/footer.js"></script>
+  <script src="../js/contact.js"></script>
 </body>
 
 </html>
